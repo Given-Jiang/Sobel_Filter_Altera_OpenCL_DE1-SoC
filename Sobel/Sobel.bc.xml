@@ -1,0 +1,65 @@
+<KERNEL_LIST>
+	<PROGRAM_GLOBAL_MEM_SIZE value="0" />
+	<KERNEL name="sobel" filename="Sobel.v" version="1" workgroup_invariant="1" has_global_atomics="0" num_vector_lanes="1" num_profiling_signals="0">
+		<RESOURCE_INFO>
+			<ID value="0" />
+			<AGGREGATE_STATIC_LOCAL_MEM_SIZE value="0" />
+			<MAX_WORK_GROUP_SIZE value="1" />
+			<REQUIRED_WORK_GROUP_SIZE x="1" y="1" z="1" />
+		</RESOURCE_INFO>
+		<CONFIGURATION>
+			<INTERFACE port="clock_reset" type="clock"/>
+			<INTERFACE port="cra_irq" type="irq"/>
+			<INTERFACE port="cra" type="slave" width="64" size="128" />
+		</CONFIGURATION>
+		<REQUIREMENTS>
+			<FILE name="acl_data_fifo.v" />
+			<FILE name="acl_debug_mem.v" />
+			<FILE name="acl_fifo.v" />
+			<FILE name="acl_id_iterator.v" />
+			<FILE name="acl_kernel_finish_detector.v" />
+			<FILE name="acl_ll_fifo.v" />
+			<FILE name="acl_ll_ram_fifo.v" />
+			<FILE name="acl_loop_limiter.v" />
+			<FILE name="acl_multi_fanout_adaptor.v" />
+			<FILE name="acl_pipeline.v" />
+			<FILE name="acl_pop.v" />
+			<FILE name="acl_push.v" />
+			<FILE name="acl_staging_reg.v" />
+			<FILE name="acl_toggle_detect.v" />
+			<FILE name="acl_token_fifo_counter.v" />
+			<FILE name="acl_valid_fifo_counter.v" />
+			<FILE name="acl_work_group_dispatcher.v" />
+			<FILE name="acl_work_group_limiter.v" />
+			<FILE name="acl_work_item_iterator.v" />
+			<FILE name="lsu_atomic.v" />
+			<FILE name="lsu_basic_coalescer.v" />
+			<FILE name="lsu_burst_master.v" />
+			<FILE name="lsu_bursting_load_stores.v" />
+			<FILE name="lsu_non_aligned_write.v" />
+			<FILE name="lsu_pipelined.v" />
+			<FILE name="lsu_prefetch_block.v" />
+			<FILE name="lsu_read_cache.v" />
+			<FILE name="lsu_simple.v" />
+			<FILE name="lsu_streaming.v" />
+			<FILE name="lsu_top.v" />
+			<FILE name="lsu_wide_wrapper.v" />
+		</REQUIREMENTS>
+		<DATA>
+			<INTERFACE port="local_bb1_ld__inst0" type="master" width="256" burstwidth="5" pipelined="true" addr_space="__global" aspace_id="1" optype="read" criticality="1048576" buffer_location="" group_id="0" />
+			<INTERFACE port="local_bb1_st_add43_lobit_inst0" type="master" width="256" burstwidth="5" pipelined="true" addr_space="__global" aspace_id="1" optype="write" criticality="1048576" buffer_location="" group_id="0" />
+		</DATA>
+		<KERNEL_ARGS>
+			<ARGUMENT name="img_test_in" opencl_access_type="ACL_ARG_ADDR_GLOBAL" opencl_type_category="ACL_ARG_MEM_OBJ" size="8" >
+		</ARGUMENT>
+			<ARGUMENT name="img_test_out" opencl_access_type="ACL_ARG_ADDR_GLOBAL" opencl_type_category="ACL_ARG_MEM_OBJ" size="8" >
+		</ARGUMENT>
+			<ARGUMENT name="iterations" opencl_access_type="ACL_ARG_ADDR_NONE" opencl_type_category="ACL_ARG_BY_VALUE" size="4" >
+		</ARGUMENT>
+		</KERNEL_ARGS>
+		<PRINTF_FORMAT_STRINGS>
+		</PRINTF_FORMAT_STRINGS>
+		<PRINTF_INTERFACES>
+		</PRINTF_INTERFACES>
+	</KERNEL>
+</KERNEL_LIST>

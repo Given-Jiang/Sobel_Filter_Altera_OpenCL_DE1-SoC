@@ -1,0 +1,25 @@
+PLL_Name	system:the_system|system_acl_iface:acl_iface|system_acl_iface_acl_kernel_clk:acl_kernel_clk|system_acl_iface_acl_kernel_clk_kernel_pll:kernel_pll|altera_pll:altera_pll_i|altera_cyclonev_pll:cyclonev_pll|altera_cyclonev_pll_base:fpll_0|fpll
+PLLJITTER	93
+PLLSPEmax	100
+PLLSPEmin	-100
+
+PLL_Name	system:the_system|system_acl_iface:acl_iface|system_acl_iface_acl_kernel_clk:acl_kernel_clk|system_acl_iface_acl_kernel_clk_kernel_pll:kernel_pll|altera_pll:altera_pll_i|altera_cyclonev_pll:cyclonev_pll|counter[0].output_counter
+PLLJITTER	NA
+PLLSPEmax	NA
+PLLSPEmin	NA
+
+PLL_Name	system:the_system|system_acl_iface:acl_iface|system_acl_iface_acl_kernel_clk:acl_kernel_clk|system_acl_iface_acl_kernel_clk_kernel_pll:kernel_pll|altera_pll:altera_pll_i|altera_cyclonev_pll:cyclonev_pll|counter[1].output_counter
+PLLJITTER	NA
+PLLSPEmax	NA
+PLLSPEmin	NA
+
+PLL_Name	system:the_system|system_acl_iface:acl_iface|system_acl_iface_pll:pll|altera_pll:altera_pll_i|general[0].gpll~FRACTIONAL_PLL
+PLLJITTER	27
+PLLSPEmax	100
+PLLSPEmin	-100
+
+PLL_Name	system:the_system|system_acl_iface:acl_iface|system_acl_iface_pll:pll|altera_pll:altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER
+PLLJITTER	NA
+PLLSPEmax	NA
+PLLSPEmin	NA
+

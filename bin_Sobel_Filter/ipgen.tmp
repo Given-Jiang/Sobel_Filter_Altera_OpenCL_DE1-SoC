@@ -1,0 +1,163 @@
+2015.04.26.20:38:45 Progress: Loading bin_Sobel_Filter/system.qsys
+2015.04.26.20:38:45 Progress: Reading input file
+2015.04.26.20:38:45 Progress: Adding ext_clk_50 [clock_source 14.0]
+2015.04.26.20:38:46 Progress: Parameterizing module ext_clk_50
+2015.04.26.20:38:46 Progress: Adding acl_iface [acl_iface_system 1.0]
+2015.04.26.20:39:16 Progress: Parameterizing module acl_iface
+2015.04.26.20:39:16 Progress: Adding Sobel_system [Sobel_system 1.0]
+2015.04.26.20:39:16 Progress: Parameterizing module Sobel_system
+2015.04.26.20:39:16 Progress: Adding cra_root [cra_ring_root 1.0]
+2015.04.26.20:39:16 Progress: Parameterizing module cra_root
+2015.04.26.20:39:16 Progress: Adding avs_sobel_cra_cra_ring [cra_ring_node 1.0]
+2015.04.26.20:39:17 Progress: Parameterizing module avs_sobel_cra_cra_ring
+2015.04.26.20:39:17 Progress: Building connections
+2015.04.26.20:39:17 Progress: Parameterizing connections
+2015.04.26.20:39:17 Progress: Validating
+2015.04.26.20:39:17 Progress: Done reading input file
+2015.04.26.20:39:22 Info: system.acl_iface.acl_iface: There are recommended upgrades for: pll
+2015.04.26.20:39:22 Info: system.acl_iface.acl_kernel_clk.acl_kernel_clk: There are recommended upgrades for: kernel_pll
+2015.04.26.20:39:22 Info: system.acl_iface.acl_kernel_clk.kernel_pll: The legal reference clock frequency is 50.0 MHz..800.0 MHz
+2015.04.26.20:39:22 Info: system.acl_iface.acl_kernel_clk.kernel_pll: Able to implement PLL with user settings
+2015.04.26.20:39:22 Warning: system.acl_iface.acl_kernel_clk.acl_pll_reconfig: set_interface_assignment: Interface "mgmt_waitrequest" does not exist
+2015.04.26.20:39:22 Warning: system.acl_iface.acl_kernel_clk.global_routing_kernel_clk.global_clk/kernel_clk.clk_in: kernel_clk.clk_in requires 100000000Hz, but source has frequency of 0Hz
+2015.04.26.20:39:22 Warning: system.acl_iface.hps: "Configuration/HPS-to-FPGA user 0 clock frequency" (desired_cfg_clk_mhz) requested 100.0 MHz, but only achieved 97.368421 MHz
+2015.04.26.20:39:22 Warning: system.acl_iface.hps: 1 or more output clock frequencies cannot be achieved precisely, consider revising desired output clock frequencies.
+2015.04.26.20:39:22 Info: system.acl_iface.pll: The legal reference clock frequency is 5.0 MHz..800.0 MHz
+2015.04.26.20:39:22 Info: system.acl_iface.pll: Able to implement PLL with user settings
+2015.04.26.20:39:22 Warning: system.acl_iface: acl_iface.acl_kernel_clk_kernel_pll_locked must be exported, or connected to a matching conduit.
+2015.04.26.20:39:22 Warning: system.acl_iface: acl_iface.acl_internal_memorg_kernel must be exported, or connected to a matching conduit.
+2015.04.26.20:39:22 Warning: system.acl_iface: acl_iface.kernel_interface_acl_bsp_memorg_host must be exported, or connected to a matching conduit.
+2015.04.26.20:39:22 Info: system: Generating system "system" for QUARTUS_SYNTH
+2015.04.26.20:39:28 Info: Interconnect is inserted between master acl_iface.kernel_cra and slave cra_root.cra_slave because the master has burstcount signal 1 bit wide, but the slave is 0 bit wide.
+2015.04.26.20:39:28 Info: Interconnect is inserted between master acl_iface.kernel_cra and slave cra_root.cra_slave because the master has address signal 30 bit wide, but the slave is 4 bit wide.
+2015.04.26.20:39:28 Info: Interconnect is inserted between master acl_iface.kernel_cra and slave cra_root.cra_slave because the master has debugaccess signal 1 bit wide, but the slave is 0 bit wide.
+2015.04.26.20:39:39 Info: Interconnect is inserted between master clock_cross_kernel_mem1.m0 and slave address_span_extender_kernel.windowed_slave because the master has address signal 30 bit wide, but the slave is 25 bit wide.
+2015.04.26.20:39:39 Info: Interconnect is inserted between master clock_cross_kernel_mem1.m0 and slave address_span_extender_kernel.windowed_slave because the master has debugaccess signal 1 bit wide, but the slave is 0 bit wide.
+2015.04.26.20:39:40 Info: Interconnect is inserted between master address_span_extender_kernel.expanded_master and slave hps.f2h_sdram0_data because the master has address signal 32 bit wide, but the slave is 27 bit wide.
+2015.04.26.20:39:40 Info: Interconnect is inserted between master address_span_extender_kernel.expanded_master and slave hps.f2h_sdram0_data because the master has burstcount signal 5 bit wide, but the slave is 8 bit wide.
+2015.04.26.20:39:40 Warning: hps.f2h_irq0: Cannot connect clock for irq_mapper.sender
+2015.04.26.20:39:40 Warning: hps.f2h_irq0: Cannot connect reset for irq_mapper.sender
+2015.04.26.20:39:40 Warning: hps.f2h_irq1: Cannot connect clock for irq_mapper_001.sender
+2015.04.26.20:39:40 Warning: hps.f2h_irq1: Cannot connect reset for irq_mapper_001.sender
+2015.04.26.20:39:46 Info: acl_iface: "system" instantiated acl_iface_system "acl_iface"
+2015.04.26.20:39:46 Info: Sobel_system: "system" instantiated Sobel_system "Sobel_system"
+2015.04.26.20:39:46 Info: cra_root: "system" instantiated cra_ring_root "cra_root"
+2015.04.26.20:39:46 Info: avs_sobel_cra_cra_ring: "system" instantiated cra_ring_node "avs_sobel_cra_cra_ring"
+2015.04.26.20:39:47 Info: mm_interconnect_0: "system" instantiated altera_mm_interconnect "mm_interconnect_0"
+2015.04.26.20:39:47 Info: mm_interconnect_1: "system" instantiated altera_mm_interconnect "mm_interconnect_1"
+2015.04.26.20:39:47 Info: irq_mapper: "system" instantiated altera_irq_mapper "irq_mapper"
+2015.04.26.20:39:48 Info: Inserting clock-crossing logic between cmd_demux.src2 and cmd_mux_002.sink0
+2015.04.26.20:39:48 Info: Inserting clock-crossing logic between rsp_demux_002.src0 and rsp_mux.sink2
+2015.04.26.20:39:50 Info: acl_kernel_clk: "acl_iface" instantiated acl_kernel_clk "acl_kernel_clk"
+2015.04.26.20:39:50 Info: clock_cross_kernel_mem1: "acl_iface" instantiated altera_avalon_mm_clock_crossing_bridge "clock_cross_kernel_mem1"
+2015.04.26.20:39:50 Info: version_id: "acl_iface" instantiated version_id "version_id"
+2015.04.26.20:39:50 Info: hps: "Running  for module: hps"
+2015.04.26.20:39:51 Warning: hps: "Configuration/HPS-to-FPGA user 0 clock frequency" (desired_cfg_clk_mhz) requested 100.0 MHz, but only achieved 97.368421 MHz
+2015.04.26.20:39:51 Warning: hps: 1 or more output clock frequencies cannot be achieved precisely, consider revising desired output clock frequencies.
+2015.04.26.20:39:53 Info: hps: "acl_iface" instantiated altera_hps "hps"
+2015.04.26.20:39:53 Info: Interconnect is inserted between master address_span_extender_0.expanded_master and slave kernel_cra.s0 because the master has readdata signal 32 bit wide, but the slave is 64 bit wide.
+2015.04.26.20:39:53 Info: Interconnect is inserted between master address_span_extender_0.expanded_master and slave kernel_cra.s0 because the master has writedata signal 32 bit wide, but the slave is 64 bit wide.
+2015.04.26.20:39:53 Info: Interconnect is inserted between master address_span_extender_0.expanded_master and slave kernel_cra.s0 because the master has byteenable signal 4 bit wide, but the slave is 8 bit wide.
+2015.04.26.20:39:54 Info: Inserting clock-crossing logic between cmd_demux.src0 and cmd_mux.sink0
+2015.04.26.20:39:54 Info: Inserting clock-crossing logic between cmd_demux.src1 and cmd_mux_001.sink0
+2015.04.26.20:39:54 Info: Inserting clock-crossing logic between rsp_demux.src0 and rsp_mux.sink0
+2015.04.26.20:39:54 Info: Inserting clock-crossing logic between rsp_demux_001.src0 and rsp_mux.sink1
+2015.04.26.20:39:55 Warning: irq_ena_0.my_irq_in: Cannot connect clock for irq_mapper.sender
+2015.04.26.20:39:55 Warning: irq_ena_0.my_irq_in: Cannot connect reset for irq_mapper.sender
+2015.04.26.20:39:57 Info: acl_kernel_interface: "acl_iface" instantiated acl_kernel_interface "acl_kernel_interface"
+2015.04.26.20:39:57 Info: pll: "acl_iface" instantiated altera_pll "pll"
+2015.04.26.20:39:57 Info: address_span_extender_kernel: "acl_iface" instantiated altera_address_span_extender "address_span_extender_kernel"
+2015.04.26.20:39:58 Info: mm_interconnect_0: "acl_iface" instantiated altera_mm_interconnect "mm_interconnect_0"
+2015.04.26.20:39:58 Info: mm_interconnect_1: "acl_iface" instantiated altera_mm_interconnect "mm_interconnect_1"
+2015.04.26.20:39:58 Info: mm_interconnect_2: "acl_iface" instantiated altera_mm_interconnect "mm_interconnect_2"
+2015.04.26.20:39:58 Info: irq_mapper: "acl_iface" instantiated altera_irq_mapper "irq_mapper"
+2015.04.26.20:39:58 Info: irq_mapper_001: "acl_iface" instantiated altera_irq_mapper "irq_mapper_001"
+2015.04.26.20:39:58 Info: rst_controller: "acl_iface" instantiated altera_reset_controller "rst_controller"
+2015.04.26.20:39:58 Info: Sobel_system_avm_memgmem0_port_0_0_rw_translator: "mm_interconnect_0" instantiated altera_merlin_master_translator "Sobel_system_avm_memgmem0_port_0_0_rw_translator"
+2015.04.26.20:39:58 Info: acl_iface_kernel_mem0_translator: "mm_interconnect_0" instantiated altera_merlin_slave_translator "acl_iface_kernel_mem0_translator"
+2015.04.26.20:39:59 Info: kernel_pll: "acl_kernel_clk" instantiated altera_pll "kernel_pll"
+2015.04.26.20:40:05 Info: pll_reconfig_0: "acl_kernel_clk" instantiated acl_pll_reconfig "pll_reconfig_0"
+2015.04.26.20:40:05 Info: pll_rom: Starting RTL generation for module 'system_acl_iface_acl_kernel_clk_pll_rom'
+2015.04.26.20:40:05 Info: pll_rom:   Generation command is [exec E:/soc_sdk/quartus/quartus/bin64/perl/bin/perl.exe -I E:/soc_sdk/quartus/quartus/bin64/perl/lib -I E:/soc_sdk/quartus/quartus/sopc_builder/bin/europa -I E:/soc_sdk/quartus/quartus/sopc_builder/bin/perl_lib -I E:/soc_sdk/quartus/quartus/sopc_builder/bin -I E:/soc_sdk/quartus/quartus/../ip/altera/sopc_builder_ip/common -I E:/soc_sdk/quartus/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- E:/soc_sdk/quartus/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=system_acl_iface_acl_kernel_clk_pll_rom --dir=C:/Users/GIVEN_~1/AppData/Local/Temp/alt6551_6205544353789819854.dir/0015_pll_rom_gen/ --quartus_dir=E:/soc_sdk/quartus/quartus --verilog --config=C:/Users/GIVEN_~1/AppData/Local/Temp/alt6551_6205544353789819854.dir/0015_pll_rom_gen//system_acl_iface_acl_kernel_clk_pll_rom_component_configuration.pl  --do_build_sim=0  ]
+2015.04.26.20:40:05 Info: pll_rom: Done RTL generation for module 'system_acl_iface_acl_kernel_clk_pll_rom'
+2015.04.26.20:40:05 Info: pll_rom: "acl_kernel_clk" instantiated altera_avalon_onchip_memory2 "pll_rom"
+2015.04.26.20:40:05 Info: counter: "acl_kernel_clk" instantiated timer "counter"
+2015.04.26.20:40:05 Info: global_routing_kernel_clk: "acl_kernel_clk" instantiated global_routing_clk "global_routing_kernel_clk"
+2015.04.26.20:40:05 Info: ctrl: "acl_kernel_clk" instantiated altera_avalon_mm_bridge "ctrl"
+2015.04.26.20:40:05 Info: pll_sw_reset: "acl_kernel_clk" instantiated sw_reset "pll_sw_reset"
+2015.04.26.20:40:05 Info: pll_lock_avs_0: "acl_kernel_clk" instantiated pll_lock_avs "pll_lock_avs_0"
+2015.04.26.20:40:07 Info: mm_interconnect_0: "acl_kernel_clk" instantiated altera_mm_interconnect "mm_interconnect_0"
+2015.04.26.20:40:07 Info: fpga_interfaces: "hps" instantiated altera_interface_generator "fpga_interfaces"
+2015.04.26.20:40:07 Info: hps_io: "hps" instantiated altera_hps_io "hps_io"
+2015.04.26.20:40:07 Info: sys_description_rom: Starting RTL generation for module 'system_acl_iface_acl_kernel_interface_sys_description_rom'
+2015.04.26.20:40:07 Info: sys_description_rom:   Generation command is [exec E:/soc_sdk/quartus/quartus/bin64/perl/bin/perl.exe -I E:/soc_sdk/quartus/quartus/bin64/perl/lib -I E:/soc_sdk/quartus/quartus/sopc_builder/bin/europa -I E:/soc_sdk/quartus/quartus/sopc_builder/bin/perl_lib -I E:/soc_sdk/quartus/quartus/sopc_builder/bin -I E:/soc_sdk/quartus/quartus/../ip/altera/sopc_builder_ip/common -I E:/soc_sdk/quartus/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- E:/soc_sdk/quartus/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=system_acl_iface_acl_kernel_interface_sys_description_rom --dir=C:/Users/GIVEN_~1/AppData/Local/Temp/alt6551_6205544353789819854.dir/0017_sys_description_rom_gen/ --quartus_dir=E:/soc_sdk/quartus/quartus --verilog --config=C:/Users/GIVEN_~1/AppData/Local/Temp/alt6551_6205544353789819854.dir/0017_sys_description_rom_gen//system_acl_iface_acl_kernel_interface_sys_description_rom_component_configuration.pl  --do_build_sim=0  ]
+2015.04.26.20:40:07 Info: sys_description_rom: Done RTL generation for module 'system_acl_iface_acl_kernel_interface_sys_description_rom'
+2015.04.26.20:40:07 Info: sys_description_rom: "acl_kernel_interface" instantiated altera_avalon_onchip_memory2 "sys_description_rom"
+2015.04.26.20:40:07 Info: mem_org_mode: "acl_kernel_interface" instantiated mem_org_mode "mem_org_mode"
+2015.04.26.20:40:07 Info: irq_bridge_0: "acl_kernel_interface" instantiated altera_irq_bridge "irq_bridge_0"
+2015.04.26.20:40:07 Info: irq_ena_0: "acl_kernel_interface" instantiated irq_ena "irq_ena_0"
+2015.04.26.20:40:08 Info: mm_interconnect_0: "acl_kernel_interface" instantiated altera_mm_interconnect "mm_interconnect_0"
+2015.04.26.20:40:09 Info: mm_interconnect_1: "acl_kernel_interface" instantiated altera_mm_interconnect "mm_interconnect_1"
+2015.04.26.20:40:09 Info: hps_h2f_lw_axi_master_agent: "mm_interconnect_0" instantiated altera_merlin_axi_master_ni "hps_h2f_lw_axi_master_agent"
+2015.04.26.20:40:09 Info: version_id_s_agent: "mm_interconnect_0" instantiated altera_merlin_slave_agent "version_id_s_agent"
+2015.04.26.20:40:09 Info: version_id_s_agent_rsp_fifo: "mm_interconnect_0" instantiated altera_avalon_sc_fifo "version_id_s_agent_rsp_fifo"
+2015.04.26.20:40:09 Info: router: "mm_interconnect_0" instantiated altera_merlin_router "router"
+2015.04.26.20:40:09 Info: router_002: "mm_interconnect_0" instantiated altera_merlin_router "router_002"
+2015.04.26.20:40:09 Info: hps_h2f_lw_axi_master_wr_limiter: "mm_interconnect_0" instantiated altera_merlin_traffic_limiter "hps_h2f_lw_axi_master_wr_limiter"
+2015.04.26.20:40:09 Info: Reusing file E:/SOC_SDK/Quartus/hld/board/terasic/de1soc/design/Sobel_Filter/bin_Sobel_Filter/system/synthesis/submodules/altera_avalon_sc_fifo.v
+2015.04.26.20:40:09 Info: version_id_s_burst_adapter: "mm_interconnect_0" instantiated altera_merlin_burst_adapter "version_id_s_burst_adapter"
+2015.04.26.20:40:09 Info: Reusing file E:/SOC_SDK/Quartus/hld/board/terasic/de1soc/design/Sobel_Filter/bin_Sobel_Filter/system/synthesis/submodules/altera_merlin_address_alignment.sv
+2015.04.26.20:40:09 Info: Reusing file E:/SOC_SDK/Quartus/hld/board/terasic/de1soc/design/Sobel_Filter/bin_Sobel_Filter/system/synthesis/submodules/altera_avalon_st_pipeline_base.v
+2015.04.26.20:40:10 Info: cmd_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux"
+2015.04.26.20:40:10 Info: cmd_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux"
+2015.04.26.20:40:10 Info: rsp_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux"
+2015.04.26.20:40:10 Info: rsp_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux"
+2015.04.26.20:40:10 Info: Reusing file E:/SOC_SDK/Quartus/hld/board/terasic/de1soc/design/Sobel_Filter/bin_Sobel_Filter/system/synthesis/submodules/altera_merlin_arbitrator.sv
+2015.04.26.20:40:10 Info: address_span_extender_kernel_expanded_master_agent: "mm_interconnect_2" instantiated altera_merlin_master_agent "address_span_extender_kernel_expanded_master_agent"
+2015.04.26.20:40:10 Info: router: "mm_interconnect_2" instantiated altera_merlin_router "router"
+2015.04.26.20:40:10 Info: router_001: "mm_interconnect_2" instantiated altera_merlin_router "router_001"
+2015.04.26.20:40:10 Info: cmd_demux: "mm_interconnect_2" instantiated altera_merlin_demultiplexer "cmd_demux"
+2015.04.26.20:40:10 Info: cmd_mux: "mm_interconnect_2" instantiated altera_merlin_multiplexer "cmd_mux"
+2015.04.26.20:40:10 Info: Reusing file E:/SOC_SDK/Quartus/hld/board/terasic/de1soc/design/Sobel_Filter/bin_Sobel_Filter/system/synthesis/submodules/altera_merlin_arbitrator.sv
+2015.04.26.20:40:10 Info: rsp_mux: "mm_interconnect_2" instantiated altera_merlin_multiplexer "rsp_mux"
+2015.04.26.20:40:10 Info: Reusing file E:/SOC_SDK/Quartus/hld/board/terasic/de1soc/design/Sobel_Filter/bin_Sobel_Filter/system/synthesis/submodules/altera_merlin_arbitrator.sv
+2015.04.26.20:40:10 Info: router: "mm_interconnect_0" instantiated altera_merlin_router "router"
+2015.04.26.20:40:10 Info: router_001: "mm_interconnect_0" instantiated altera_merlin_router "router_001"
+2015.04.26.20:40:10 Info: router_003: "mm_interconnect_0" instantiated altera_merlin_router "router_003"
+2015.04.26.20:40:10 Info: cmd_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux"
+2015.04.26.20:40:10 Info: cmd_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux"
+2015.04.26.20:40:10 Info: Reusing file E:/SOC_SDK/Quartus/hld/board/terasic/de1soc/design/Sobel_Filter/bin_Sobel_Filter/system/synthesis/submodules/altera_merlin_arbitrator.sv
+2015.04.26.20:40:10 Info: cmd_mux_002: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux_002"
+2015.04.26.20:40:10 Info: Reusing file E:/SOC_SDK/Quartus/hld/board/terasic/de1soc/design/Sobel_Filter/bin_Sobel_Filter/system/synthesis/submodules/altera_merlin_arbitrator.sv
+2015.04.26.20:40:11 Info: rsp_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux"
+2015.04.26.20:40:11 Info: rsp_demux_002: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux_002"
+2015.04.26.20:40:11 Info: rsp_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux"
+2015.04.26.20:40:11 Info: Reusing file E:/SOC_SDK/Quartus/hld/board/terasic/de1soc/design/Sobel_Filter/bin_Sobel_Filter/system/synthesis/submodules/altera_merlin_arbitrator.sv
+2015.04.26.20:40:11 Info: crosser: "mm_interconnect_0" instantiated altera_avalon_st_handshake_clock_crosser "crosser"
+2015.04.26.20:40:11 Info: Reusing file E:/SOC_SDK/Quartus/hld/board/terasic/de1soc/design/Sobel_Filter/bin_Sobel_Filter/system/synthesis/submodules/altera_avalon_st_pipeline_base.v
+2015.04.26.20:40:41 Info: border: "hps_io" instantiated altera_interface_generator "border"
+2015.04.26.20:40:41 Info: router: "mm_interconnect_0" instantiated altera_merlin_router "router"
+2015.04.26.20:40:41 Info: router_001: "mm_interconnect_0" instantiated altera_merlin_router "router_001"
+2015.04.26.20:40:41 Info: cmd_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux"
+2015.04.26.20:40:41 Info: cmd_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux"
+2015.04.26.20:40:41 Info: Reusing file E:/SOC_SDK/Quartus/hld/board/terasic/de1soc/design/Sobel_Filter/bin_Sobel_Filter/system/synthesis/submodules/altera_merlin_arbitrator.sv
+2015.04.26.20:40:41 Info: rsp_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux"
+2015.04.26.20:40:41 Info: Reusing file E:/SOC_SDK/Quartus/hld/board/terasic/de1soc/design/Sobel_Filter/bin_Sobel_Filter/system/synthesis/submodules/altera_merlin_arbitrator.sv
+2015.04.26.20:40:41 Info: kernel_cra_s0_cmd_width_adapter: "mm_interconnect_0" instantiated altera_merlin_width_adapter "kernel_cra_s0_cmd_width_adapter"
+2015.04.26.20:40:41 Info: Reusing file E:/SOC_SDK/Quartus/hld/board/terasic/de1soc/design/Sobel_Filter/bin_Sobel_Filter/system/synthesis/submodules/altera_merlin_address_alignment.sv
+2015.04.26.20:40:41 Info: Reusing file E:/SOC_SDK/Quartus/hld/board/terasic/de1soc/design/Sobel_Filter/bin_Sobel_Filter/system/synthesis/submodules/altera_merlin_burst_uncompressor.sv
+2015.04.26.20:40:41 Info: router: "mm_interconnect_1" instantiated altera_merlin_router "router"
+2015.04.26.20:40:41 Info: router_001: "mm_interconnect_1" instantiated altera_merlin_router "router_001"
+2015.04.26.20:40:41 Info: router_002: "mm_interconnect_1" instantiated altera_merlin_router "router_002"
+2015.04.26.20:40:41 Info: router_003: "mm_interconnect_1" instantiated altera_merlin_router "router_003"
+2015.04.26.20:40:41 Info: router_005: "mm_interconnect_1" instantiated altera_merlin_router "router_005"
+2015.04.26.20:40:41 Info: cmd_demux: "mm_interconnect_1" instantiated altera_merlin_demultiplexer "cmd_demux"
+2015.04.26.20:40:41 Info: cmd_mux: "mm_interconnect_1" instantiated altera_merlin_multiplexer "cmd_mux"
+2015.04.26.20:40:41 Info: Reusing file E:/SOC_SDK/Quartus/hld/board/terasic/de1soc/design/Sobel_Filter/bin_Sobel_Filter/system/synthesis/submodules/altera_merlin_arbitrator.sv
+2015.04.26.20:40:41 Info: cmd_mux_002: "mm_interconnect_1" instantiated altera_merlin_multiplexer "cmd_mux_002"
+2015.04.26.20:40:41 Info: Reusing file E:/SOC_SDK/Quartus/hld/board/terasic/de1soc/design/Sobel_Filter/bin_Sobel_Filter/system/synthesis/submodules/altera_merlin_arbitrator.sv
+2015.04.26.20:40:41 Info: rsp_demux: "mm_interconnect_1" instantiated altera_merlin_demultiplexer "rsp_demux"
+2015.04.26.20:40:41 Info: rsp_demux_002: "mm_interconnect_1" instantiated altera_merlin_demultiplexer "rsp_demux_002"
+2015.04.26.20:40:41 Info: rsp_mux: "mm_interconnect_1" instantiated altera_merlin_multiplexer "rsp_mux"
+2015.04.26.20:40:41 Info: Reusing file E:/SOC_SDK/Quartus/hld/board/terasic/de1soc/design/Sobel_Filter/bin_Sobel_Filter/system/synthesis/submodules/altera_merlin_arbitrator.sv
+2015.04.26.20:40:41 Info: system: Done "system" with 85 modules, 196 files

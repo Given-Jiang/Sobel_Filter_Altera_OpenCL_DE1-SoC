@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<board name="de1soc_sharedonly" vfabric="0" big_endian="0">
+	 <global_mem_config name="" mode="swdimm"/> 
+	<kernel name="sobel" csr_addr="0" csr_size="128" work_group_invariant="1" vector_lanes="1" >
+		<work_group size_x="1" size_y="1" size_z="1" max_size="1"/>
+			<argument index="0" type="2" category="1" size="8" >
+			</argument>
+			<argument index="1" type="2" category="1" size="8" >
+			</argument>
+			<argument index="2" type="0" category="0" size="4" >
+			</argument>
+	</kernel>
+</board>

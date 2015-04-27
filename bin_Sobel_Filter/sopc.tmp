@@ -1,0 +1,29 @@
+2015.04.26.20:38:07 Info: Doing: <b>qsys-script --script=system.tcl --Xmx512M --XX:+UseSerialGC --system-file=system.qsys</b>
+2015.04.26.20:38:42 Info: set_validation_property AUTOMATIC_VALIDATION false
+2015.04.26.20:38:42 Info: add_instance Sobel_system Sobel_system 
+2015.04.26.20:38:42 Info: add_connection acl_iface.kernel_clk Sobel_system.clock_reset
+2015.04.26.20:38:42 Info: add_connection acl_iface.kernel_clk2x Sobel_system.clock_reset2x
+2015.04.26.20:38:42 Info: add_connection acl_iface.kernel_reset Sobel_system.clock_reset_reset
+2015.04.26.20:38:42 Info: add_connection Sobel_system.avm_memgmem0_port_0_0_rw acl_iface.kernel_mem0
+2015.04.26.20:38:42 Info: add_connection acl_iface.kernel_irq Sobel_system.kernel_irq
+2015.04.26.20:38:42 Info: add_instance cra_root cra_ring_root 
+2015.04.26.20:38:42 Info: set_instance_parameter_value cra_root DATA_W 64
+2015.04.26.20:38:42 Info: set_instance_parameter_value cra_root ADDR_W 4
+2015.04.26.20:38:42 Info: set_instance_parameter_value cra_root ID_W 0
+2015.04.26.20:38:42 Info: add_connection acl_iface.kernel_clk cra_root.clock
+2015.04.26.20:38:42 Info: add_connection acl_iface.kernel_reset cra_root.reset
+2015.04.26.20:38:42 Info: add_connection acl_iface.kernel_cra cra_root.cra_slave
+2015.04.26.20:38:42 Info: set_connection_parameter_value acl_iface.kernel_cra/cra_root.cra_slave baseAddress 0x0
+2015.04.26.20:38:42 Info: add_instance avs_sobel_cra_cra_ring cra_ring_node 
+2015.04.26.20:38:42 Info: set_instance_parameter_value avs_sobel_cra_cra_ring DATA_W 64
+2015.04.26.20:38:42 Info: set_instance_parameter_value avs_sobel_cra_cra_ring RING_ADDR_W 4
+2015.04.26.20:38:42 Info: set_instance_parameter_value avs_sobel_cra_cra_ring CRA_ADDR_W 4
+2015.04.26.20:38:42 Info: set_instance_parameter_value avs_sobel_cra_cra_ring ID_W 0
+2015.04.26.20:38:42 Info: set_instance_parameter_value avs_sobel_cra_cra_ring ID 0
+2015.04.26.20:38:42 Info: add_connection acl_iface.kernel_clk avs_sobel_cra_cra_ring.clock
+2015.04.26.20:38:42 Info: add_connection acl_iface.kernel_reset avs_sobel_cra_cra_ring.reset
+2015.04.26.20:38:42 Info: add_connection cra_root.ring_out avs_sobel_cra_cra_ring.ring_in
+2015.04.26.20:38:42 Info: add_connection avs_sobel_cra_cra_ring.cra_master Sobel_system.avs_sobel_cra
+2015.04.26.20:38:42 Info: set_connection_parameter_value avs_sobel_cra_cra_ring.cra_master/Sobel_system.avs_sobel_cra baseAddress 0x0
+2015.04.26.20:38:42 Info: add_connection avs_sobel_cra_cra_ring.ring_out cra_root.ring_in
+2015.04.26.20:38:42 Info: save_system 

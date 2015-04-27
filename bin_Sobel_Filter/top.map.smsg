@@ -1,0 +1,41 @@
+Info (10281): Verilog HDL Declaration information at acl_pop.v(46): object "POP_GARBAGE" differs only in case from object "pop_garbage" in the same scope
+Info (10281): Verilog HDL Declaration information at lsu_basic_coalescer.v(542): object "TIMEOUT" differs only in case from object "timeout" in the same scope
+Warning (10268): Verilog HDL information at lsu_bursting_load_stores.v(529): always construct contains both blocking and non-blocking assignments
+Info (10281): Verilog HDL Declaration information at lsu_bursting_load_stores.v(920): object "TIME_OUT" differs only in case from object "time_out" in the same scope
+Info (10281): Verilog HDL Declaration information at lsu_bursting_load_stores.v(921): object "MAX_THREAD" differs only in case from object "max_thread" in the same scope
+Info (10281): Verilog HDL Declaration information at lsu_bursting_load_stores.v(1653): object "TIMEOUT" differs only in case from object "timeout" in the same scope
+Warning (10268): Verilog HDL information at lsu_streaming.v(155): always construct contains both blocking and non-blocking assignments
+Warning (10268): Verilog HDL information at lsu_streaming.v(703): always construct contains both blocking and non-blocking assignments
+Info (10281): Verilog HDL Declaration information at system_acl_iface_mm_interconnect_2_router_001.sv(48): object "DEFAULT_WR_CHANNEL" differs only in case from object "default_wr_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at system_acl_iface_mm_interconnect_2_router_001.sv(49): object "DEFAULT_RD_CHANNEL" differs only in case from object "default_rd_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at system_acl_iface_mm_interconnect_2_router.sv(48): object "DEFAULT_WR_CHANNEL" differs only in case from object "default_wr_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at system_acl_iface_mm_interconnect_2_router.sv(49): object "DEFAULT_RD_CHANNEL" differs only in case from object "default_rd_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at altera_merlin_burst_adapter_new.sv(265): object "BYTE_TO_WORD_SHIFT" differs only in case from object "byte_to_word_shift" in the same scope
+Info (10281): Verilog HDL Declaration information at altera_wrap_burst_converter.sv(279): object "addr_incr" differs only in case from object "ADDR_INCR" in the same scope
+Info (10281): Verilog HDL Declaration information at system_acl_iface_mm_interconnect_0_router_002.sv(48): object "DEFAULT_WR_CHANNEL" differs only in case from object "default_wr_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at system_acl_iface_mm_interconnect_0_router_002.sv(49): object "DEFAULT_RD_CHANNEL" differs only in case from object "default_rd_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at system_acl_iface_mm_interconnect_0_router.sv(48): object "DEFAULT_WR_CHANNEL" differs only in case from object "default_wr_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at system_acl_iface_mm_interconnect_0_router.sv(49): object "DEFAULT_RD_CHANNEL" differs only in case from object "default_rd_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at system_acl_iface_acl_kernel_interface_mm_interconnect_1_router_005.sv(48): object "DEFAULT_WR_CHANNEL" differs only in case from object "default_wr_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at system_acl_iface_acl_kernel_interface_mm_interconnect_1_router_005.sv(49): object "DEFAULT_RD_CHANNEL" differs only in case from object "default_rd_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at system_acl_iface_acl_kernel_interface_mm_interconnect_1_router_003.sv(48): object "DEFAULT_WR_CHANNEL" differs only in case from object "default_wr_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at system_acl_iface_acl_kernel_interface_mm_interconnect_1_router_003.sv(49): object "DEFAULT_RD_CHANNEL" differs only in case from object "default_rd_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at system_acl_iface_acl_kernel_interface_mm_interconnect_1_router_002.sv(48): object "DEFAULT_WR_CHANNEL" differs only in case from object "default_wr_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at system_acl_iface_acl_kernel_interface_mm_interconnect_1_router_002.sv(49): object "DEFAULT_RD_CHANNEL" differs only in case from object "default_rd_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at system_acl_iface_acl_kernel_interface_mm_interconnect_1_router_001.sv(48): object "DEFAULT_WR_CHANNEL" differs only in case from object "default_wr_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at system_acl_iface_acl_kernel_interface_mm_interconnect_1_router_001.sv(49): object "DEFAULT_RD_CHANNEL" differs only in case from object "default_rd_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at system_acl_iface_acl_kernel_interface_mm_interconnect_1_router.sv(48): object "DEFAULT_WR_CHANNEL" differs only in case from object "default_wr_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at system_acl_iface_acl_kernel_interface_mm_interconnect_1_router.sv(49): object "DEFAULT_RD_CHANNEL" differs only in case from object "default_rd_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at system_acl_iface_acl_kernel_interface_mm_interconnect_0_router_001.sv(48): object "DEFAULT_WR_CHANNEL" differs only in case from object "default_wr_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at system_acl_iface_acl_kernel_interface_mm_interconnect_0_router_001.sv(49): object "DEFAULT_RD_CHANNEL" differs only in case from object "default_rd_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at system_acl_iface_acl_kernel_interface_mm_interconnect_0_router.sv(48): object "DEFAULT_WR_CHANNEL" differs only in case from object "default_wr_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at system_acl_iface_acl_kernel_interface_mm_interconnect_0_router.sv(49): object "DEFAULT_RD_CHANNEL" differs only in case from object "default_rd_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at system_acl_iface_acl_kernel_clk_mm_interconnect_0_router_003.sv(48): object "DEFAULT_WR_CHANNEL" differs only in case from object "default_wr_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at system_acl_iface_acl_kernel_clk_mm_interconnect_0_router_003.sv(49): object "DEFAULT_RD_CHANNEL" differs only in case from object "default_rd_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at system_acl_iface_acl_kernel_clk_mm_interconnect_0_router_001.sv(48): object "DEFAULT_WR_CHANNEL" differs only in case from object "default_wr_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at system_acl_iface_acl_kernel_clk_mm_interconnect_0_router_001.sv(49): object "DEFAULT_RD_CHANNEL" differs only in case from object "default_rd_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at system_acl_iface_acl_kernel_clk_mm_interconnect_0_router.sv(48): object "DEFAULT_WR_CHANNEL" differs only in case from object "default_wr_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at system_acl_iface_acl_kernel_clk_mm_interconnect_0_router.sv(49): object "DEFAULT_RD_CHANNEL" differs only in case from object "default_rd_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at altera_pll_reconfig_core.v(108): object "LOCKED" differs only in case from object "locked" in the same scope
+Info (10281): Verilog HDL Declaration information at altera_pll_reconfig_core.v(1801): object "dps_done" differs only in case from object "DPS_DONE" in the same scope
+Info (10281): Verilog HDL Declaration information at altera_pll_reconfig_core.v(1793): object "dps_changed" differs only in case from object "DPS_CHANGED" in the same scope

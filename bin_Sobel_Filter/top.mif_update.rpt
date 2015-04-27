@@ -1,0 +1,76 @@
+MIF/HEX Update report for top
+Sun Apr 26 20:52:02 2015
+Quartus II 64-Bit Version 14.0.0 Build 200 06/17/2014 Patches 0.08a SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. MIF/HEX Update Summary
+  3. MIF/HEX Update Processed Files
+  4. MIF/HEX Update Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2014 Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, the Altera Quartus II License Agreement,
+the Altera MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Altera and sold by Altera or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+
+
+
++---------------------------------------------------------------+
+; MIF/HEX Update Summary                                        ;
++-----------------------+---------------------------------------+
+; MIF/HEX Update Status ; Successful - Sun Apr 26 20:52:02 2015 ;
+; Revision Name         ; top                                   ;
+; Top-level Entity Name ; top                                   ;
+; Family                ; Cyclone V                             ;
+; Device                ; 5CSEMA5F31C6                          ;
++-----------------------+---------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------+
+; MIF/HEX Update Processed Files                                                                       ;
++------------------------------------------------------------------------------------------------------+
+; File Name                                                                                            ;
++------------------------------------------------------------------------------------------------------+
+; E:/SOC_SDK/Quartus/hld/board/terasic/de1soc/design/Sobel_Filter/bin_Sobel_Filter/pll_rom.hex         ;
+; E:/SOC_SDK/Quartus/hld/board/terasic/de1soc/design/Sobel_Filter/bin_Sobel_Filter/sys_description.hex ;
++------------------------------------------------------------------------------------------------------+
+
+
++-------------------------+
+; MIF/HEX Update Messages ;
++-------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit MIF/HEX Update
+    Info: Version 14.0.0 Build 200 06/17/2014 Patches 0.08a SJ Full Version
+    Info: Processing started: Sun Apr 26 20:51:34 2015
+Info: Command: quartus_cdb top -c top --update_mif
+Info: Using INI file E:/SOC_SDK/Quartus/hld/board/terasic/de1soc/design/Sobel_Filter/bin_Sobel_Filter/quartus.ini
+Critical Warning (127005): Memory depth (512) in the design file differs from memory depth (13) in the Memory Initialization File "E:/SOC_SDK/Quartus/hld/board/terasic/de1soc/design/Sobel_Filter/bin_Sobel_Filter/sys_description.hex" -- setting initial value for remaining addresses to 0
+Info (39024): Processed the following Memory Initialization File(s)
+    Info (39025): Processed Memory Initialization File E:/SOC_SDK/Quartus/hld/board/terasic/de1soc/design/Sobel_Filter/bin_Sobel_Filter/pll_rom.hex
+    Info (39025): Processed Memory Initialization File E:/SOC_SDK/Quartus/hld/board/terasic/de1soc/design/Sobel_Filter/bin_Sobel_Filter/sys_description.hex
+Info: Quartus II 64-Bit MIF/HEX Update was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 793 megabytes
+    Info: Processing ended: Sun Apr 26 20:52:02 2015
+    Info: Elapsed time: 00:00:28
+    Info: Total CPU time (on all processors): 00:00:28
+
+

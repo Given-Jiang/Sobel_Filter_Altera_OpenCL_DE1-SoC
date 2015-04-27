@@ -1,0 +1,18 @@
+Total: LEs = 12263  FFs = 18429  RAMs = 54  DSPs = 4
+Global_resources: LEs = 3566  FFs = 7148  RAMs = 0  DSPs = 0
+Const_resources: LEs = 0  FFs = 0  RAMs = 0  DSPs = 0
+LSU_resources: LEs = 987  FFs = 4176  RAMs = 29  DSPs = 0
+FP_resources: LEs = 0  FFs = 0  RAMs = 0  DSPs = 0
+Local_mem_resources: LEs = 0  FFs = 0  RAMs = 0  DSPs = 0
+Local_mem_ram_resources: LEs = 0  FFs = 0  RAMs = 0  DSPs = 0
+Reg_State_resources: LEs = 411  FFs = 1805  RAMs = 0  DSPs = 0
+RAM_State_resources: LEs = 443  FFs = 341  RAMs = 6  DSPs = 0
+MrgBr_State_resources: LEs = 1  FFs = 2  RAMs = 0  DSPs = 0
+Other_State_resources: LEs = 93  FFs = 93  RAMs = 0  DSPs = 0
+Other_resources: LEs = 1802  FFs = 1747  RAMs = 0  DSPs = 4
+------------
+LEs: 11.1917 %
+FFs: 8.40954 %
+RAMs: 10.5058 %
+DSPs: 3.57143 %
+Util: 18.6739 %
